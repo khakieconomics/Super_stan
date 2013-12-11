@@ -8,10 +8,10 @@ library(ggplot2); library(plyr); library(Hmisc); library(RSQLite); library(rstan
 # Set default text size
 theme_set(theme_gray(base_size = 18))
 
-# You will need to have a working directory on your local machine (not a network or dropbox)
+# Set your working directory
 setwd("C:/stantest")
 
-# Download my database of APRA data
+# Download the fund-level APRA data
 download.file("https://dl.dropboxusercontent.com/u/63100926/Super_analysis.RData", destfile="Super_analysis.RData")
 
 load("Super_analysis.RData")
